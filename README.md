@@ -26,8 +26,6 @@ https://user-images.githubusercontent.com/68147174/134449802-febd8341-89fd-46cb-
 
 # Author
 
-作成情報を列挙する
-
 * 作成者 ： [U_SAY](https://profile.u-say.ga/)
 * E-mail ： [sekaino.usay@gmail.com](mailto:sekaino.usay@gmail.com)
 
