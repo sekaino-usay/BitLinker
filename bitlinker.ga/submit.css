@@ -1,3 +1,4 @@
+/* 「短縮する！」ボタン */
 .button {
   display: inline-block;
   border-radius: 5%;
@@ -10,7 +11,7 @@
   /* カーソル   */
   padding: 12px 12px;
   /* 余白       */
-  background: #59b300;
+  background: #00a3e3;
   /* 背景色     */
   color: #ffffff;
   /* 文字色     */
@@ -18,12 +19,13 @@
   /* 1行の高さ  */
   transition: .3s;
   /* なめらか変化 */
-  border: 2px solid #59b300;
+  border: 2px solid #00a3e3;
   /* 枠の指定 */
 }
 
+/* ボタンが押されたら */
 .button:hover {
-  color: #59b300;
+  color: #00a3e3;
   /* 背景色     */
   background: #ffffff;
   /* 文字色     */

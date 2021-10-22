@@ -1,25 +1,67 @@
+/* テキスト中央揃え */
 body {
   text-align: center;
 }
 
+/* フォント */
 p,
 a,
-li {
+li,
+th,
+tr,
+td,
+input,
+textarea {
   font-family: 'M PLUS 1p', sans-serif;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: 'Yusei Magic', sans-serif;
 }
 
-.line {
+/* 区切り線 */
+hr {
   position: relative;
-  height: 5px;
-  border-width: 0;
+  height: 10px;
+  border-width: 100%;
+  background-color: #00bcd4;
   background-image: -webkit-linear-gradient(left,
-      transparent 0%, #283593 50%, transparent 100%);
+      #00bcd4 0%, #283593 50%, #00bcd4 100%);
   background-image: linear-gradient(90deg,
-      transparent 0%, #283593 50%, transparent 100%);
+      #00bcd4 0%, #283593 50%, #00bcd4 100%);
+}
+
+/* ナビゲーションとコンテンツが重ならないように */
+body {
+  padding-top: 100px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* テキスト・画像の配置調節 */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex_txt {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.flex_img {
+  width: 25%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
 }

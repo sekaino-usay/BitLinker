@@ -1,0 +1,13 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 400 https://error.bitlinker.ga/400.php
+ErrorDocument 401 https://error.bitlinker.ga/401.php
+ErrorDocument 403 https://error.bitlinker.ga/403.php
+ErrorDocument 404 https://error.bitlinker.ga/404.php
+ErrorDocument 500 https://error.bitlinker.ga/500.php
+ErrorDocument 503 https://error.bitlinker.ga/503.php
+order deny,allow
+
+php_flag display_errors Off
