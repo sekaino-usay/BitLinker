@@ -67,7 +67,7 @@
             <a class="nav-link" href="https://www.bitlinker.ga/about.php">BitLinkerについて</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="https://www.bitlinker.ga/reviews.php">お客様の声</a>
+            <a class="nav-link" href="https://www.bitlinker.ga/reviews.php">お客様の声</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">セキュリティ</a>
@@ -102,11 +102,11 @@
       <h1>短縮結果</h1>
       <br>
 
-<?php
+      <?php
 //POST元の判定
 $host  = $_SERVER['HTTP_REFERER'];
 $str   = parse_url($host);
-$check = 'wrong';
+$check = 'bad';
 if (stristr($str['host'], "www.bitlinker.ga")) {
     $check = 'ok';
 }
@@ -114,6 +114,12 @@ if (stristr($str['host'], "www.bitlinker.ga")) {
 //URL作成処理関数化
 function shorten()
 {
+    //キーワード
+    $keyword = $_POST['keyword'];
+
+    //元URL
+    $ex_url = urlencode($_POST['url']);
+
     //短縮URL
     $your_url = "https://btln.ga/" . $_POST['keyword'];
 
@@ -121,9 +127,9 @@ function shorten()
     $path = "./" . $_POST['keyword'];
     //キーワードが使えるか調べる・正規表現で入力文字制限
     if (file_exists($path)) {
-        echo('<p>https://btln.ga/' . $_POST['keyword'] . 'は使用できません。</p>');
-    } elseif (preg_match("/^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$/u", $_POST['keyword'])) {
-        mkdir($_POST['keyword']);
+        echo('<p>https://btln.ga/' . $keyword . 'は使用できません。</p>');
+    } elseif (preg_match("/^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$/u", $keyword)) {
+        mkdir($keyword);
         echo('<p>作成された短縮URLは、' . $your_url . 'です。</p>');
         echo('<br>');
         echo('<a href="' . $your_url . '" target="_blank">' . $your_url . '</a>');
@@ -135,14 +141,14 @@ function shorten()
 
         //index.phpファイルにリダイレクト内容を書き込み
         file_put_contents(
-            $_POST['keyword'] . '/index.php',
+            $keyword . '/index.php',
             '<?php
-  header("Location: ' . $_POST['url'] . '", true, 302);
+  header("Location: ' . $ex_url . '", true, 302);
   exit;
   ?>'
       );
       } else {
-      echo('<p>URLを発行できません。<br>「キーワード」に使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。</p>');
+      echo('<p>URLを発行できません。<br>短縮前のURLが正しい形式で入力されているか確認して下さい。<br>「キーワード」に使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。</p>');
       }
       }
 
@@ -152,7 +158,7 @@ function shorten()
       } else {
       echo('<p>' . $host . 'から短縮URLを作成しようとしています。<a href="https://www.bitlinker.ga">www.bitlinker.ga</a>から作成してください。</p>');
       }
-?>
+      ?>
 
       <!--URLコピーボタン-->
       <script>
@@ -181,7 +187,7 @@ function shorten()
     <div class="flex_txt">
       <h1>「利用者様の声」をお寄せ下さい！</h1>
       <br>
-      <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しようと考えています。
+      <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しています。
         <br>そこで、実際に使用して頂いている方からコメントを募集しております。
         <br>以下のフォーム（Googleフォームに飛びます）へ是非、コメントをお寄せ下さい！
         <br>ご協力、よろしくお願いします！

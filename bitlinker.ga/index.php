@@ -67,7 +67,7 @@
             <a class="nav-link" href="./about.php">BitLinkerについて</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="./reviews.php">お客様の声</a>
+            <a class="nav-link" href="./reviews.php">お客様の声</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">セキュリティ</a>
@@ -147,7 +147,7 @@
     <div class="flex_txt">
       <h1>URLを短縮する！</h1>
       <br>
-      <form action="https://www.btln.ga/shorten.php" method="post">
+      <form action="https://btln.ga/shorten.php" method="post">
         <input type="url" name="url" class="inText" id="inText1" placeholder="短縮したいURLを入力してください" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
         <br><br>
         <input type="text" name="keyword" pattern="^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$" title="使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。" class="inText" id="inText2" placeholder="キーワードを入力してください" onblur="coloeSet(this)"
