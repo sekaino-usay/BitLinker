@@ -116,7 +116,7 @@ function report()
                         <a class="nav-link" href="./about.php">BitLinkerについて</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./reviews.php">お客様の声</a>
+                        <a class="nav-link" href="./reviews.php">利用者様の声</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">セキュリティ</a>
