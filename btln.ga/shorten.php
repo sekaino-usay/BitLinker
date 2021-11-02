@@ -67,7 +67,7 @@
             <a class="nav-link" href="https://www.bitlinker.ga/about.php">BitLinkerについて</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.bitlinker.ga/reviews.php">お客様の声</a>
+            <a class="nav-link" href="https://www.bitlinker.ga/reviews.php">利用者様の声</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">セキュリティ</a>
@@ -118,9 +118,9 @@ function shorten()
     $keyword = $_POST['keyword'];
 
     //元URL
-    $ex_url = urlencode($_POST['url']);
+    $ex_url = $_POST['url'];
 
-    //短縮URL
+    //短縮後URL
     $your_url = "https://btln.ga/" . $_POST['keyword'];
 
     //パス
