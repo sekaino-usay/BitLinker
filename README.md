@@ -33,4 +33,4 @@ https://user-images.githubusercontent.com/68147174/138474210-44b9e94c-3276-413a-
 
 # License
 
-"BitLinker" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"BitLinker" is released under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
