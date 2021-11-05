@@ -112,6 +112,9 @@ function enquiry()
                     <li class="nav-item active">
                         <a class="nav-link" aria-current="page" href="./index.php">ホーム</a>
                     </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./delete.php">短縮URLを削除</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./about.php">BitLinkerについて</a>
                     </li>
@@ -199,7 +202,7 @@ if (isset($_POST["recaptchaResponse"]) && !empty($_POST["recaptchaResponse"])) {
         <div class="flex_txt">
             <h1>URLを短縮する！</h1>
             <br>
-            <form action="https://www.btln.ga/shorten.php" method="post">
+            <form action="./shorten.php" method="post">
                 <input type="url" name="url" class="inText" id="inText1" placeholder="短縮したいURLを入力してください" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
                 <br><br>
                 <input type="text" name="keyword" pattern="^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$" title="使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。" class="inText" id="inText2" placeholder="キーワードを入力してください" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
@@ -226,8 +229,9 @@ if (isset($_POST["recaptchaResponse"]) && !empty($_POST["recaptchaResponse"])) {
                     <h5>メイン</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
+<li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
                         <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
-                        <!-- <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li> -->
+                        <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
                         <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
                     </ul>
                 </div>

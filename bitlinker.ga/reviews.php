@@ -64,6 +64,9 @@
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="./index.php">ホーム</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./delete.php">短縮URLを削除</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="./about.php">BitLinkerについて</a>
           </li>
@@ -178,8 +181,9 @@
           <h5>メイン</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
+<li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
             <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
-            <!-- <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li> -->
+            <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
             <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
           </ul>
         </div>
