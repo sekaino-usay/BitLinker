@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BitLinker - 登録不要のカスタム短縮URL作成サービス</title>
+  <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス</title>
   <link rel="shortcut icon" href="./icon.ico">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -25,17 +25,17 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363201401295069" crossorigin="anonymous"></script>
   <script data-ad-client="ca-pub-7363201401295069" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- OGP設定 -->
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.bitlinker.ga">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
-  <meta property="og:site_name" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@sekaino_usay">
   <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
 </head>
@@ -101,7 +101,7 @@
     <div class="flex_txt">
       <h1>サービス内容</h1>
       <br>
-      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。
+      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができる、純国産のサービスです。
         <br>SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！
       </p>
     </div>

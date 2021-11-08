@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BitLinker - 登録不要のカスタム短縮URL作成サービス</title>
+  <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス</title>
   <link rel="shortcut icon" href="./icon.ico">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -25,17 +25,17 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363201401295069" crossorigin="anonymous"></script>
   <script data-ad-client="ca-pub-7363201401295069" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- OGP設定 -->
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.bitlinker.ga">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
-  <meta property="og:site_name" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@sekaino_usay">
   <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
 </head>
@@ -147,7 +147,7 @@
     <div class="flex_txt">
       <h1>URLを短縮する！</h1>
       <br>
-      <form action="https://btln.ga/shorten.php" method="post">
+      <form action="./shorten.php" method="post">
         <input type="url" name="url" class="inText" id="inText1" placeholder="短縮したいURLを入力してください" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
         <br><br>
         <input type="text" name="keyword" pattern="^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$" title="使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。" class="inText" id="inText2" placeholder="キーワードを入力してください" onblur="coloeSet(this)"

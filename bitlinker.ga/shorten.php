@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BitLinker - 登録不要のカスタム短縮URL作成サービス</title>
+  <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス</title>
   <link rel="shortcut icon" href="./icon.ico">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -25,17 +25,17 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363201401295069" crossorigin="anonymous"></script>
   <script data-ad-client="ca-pub-7363201401295069" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- OGP設定 -->
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.bitlinker.ga">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
-  <meta property="og:site_name" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@sekaino_usay">
   <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:title" content="BitLinker - 登録不要のカスタム短縮URL作成サービス">
+  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
 </head>
@@ -138,10 +138,7 @@ function shorten()
         //index.phpファイルにリダイレクト内容を書き込み
         file_put_contents(
             $path . '/index.php',
-            '<?php
-  header("Location: ' . $ex_url . '", true, 302);
-  exit;
-  ?>'
+            '<meta name="robots" content="noindex" /> <?php header("Location: ' . $ex_url . '", true, 302); exit; ?>'
         );
 
         //URLデータファイル作成
@@ -254,18 +251,18 @@ function shorten()
         <div class="col-2">
           <h5>メイン</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/index.php" class="nav-link p-0 text-muted">ホーム</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
+            <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
+            <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
+            <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
+            <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
           </ul>
         </div>
 
         <div class="col-2">
           <h5>セキュリティ</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/bug_report.php" class="nav-link p-0 text-muted">バグ・脆弱性報告</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/url_report.php" class="nav-link p-0 text-muted">短縮URL報告</a></li>
+            <li class="nav-item mb-2"><a href="./bug_report.php" class="nav-link p-0 text-muted">バグ・脆弱性報告</a></li>
+            <li class="nav-item mb-2"><a href="./url_report.php" class="nav-link p-0 text-muted">短縮URL報告</a></li>
             <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ホワイトハッカー</a></li> -->
           </ul>
         </div>
@@ -273,9 +270,9 @@ function shorten()
         <div class="col-2">
           <h5>ご利用にあたって</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/terms.php" class="nav-link p-0 text-muted">利用規約</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/disclaimer.php" class="nav-link p-0 text-muted">免責事項</a></li>
-            <li class="nav-item mb-2"><a href="https://www.bitlinker.ga/privacy_policy.php" class="nav-link p-0 text-muted">プライバシーポリシー</a></li>
+            <li class="nav-item mb-2"><a href="./terms.php" class="nav-link p-0 text-muted">利用規約</a></li>
+            <li class="nav-item mb-2"><a href="./disclaimer.php" class="nav-link p-0 text-muted">免責事項</a></li>
+            <li class="nav-item mb-2"><a href="./privacy_policy.php" class="nav-link p-0 text-muted">プライバシーポリシー</a></li>
           </ul>
         </div>
 
