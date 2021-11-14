@@ -28,16 +28,17 @@
   <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
+  <meta property="og:image" content="https://www.bitlinker.ga/ogp_1200x630.png">
   <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@sekaino_usay">
-  <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
-  <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-  <meta property="og:image" content="https://www.bitlinker.ga/logo.png">
+  <meta name="twitter:site" content="@BitLinker_jp">
+  <meta name="twitter:url" content="https://www.bitlinker.ga">
+  <meta name="twitter:domain" content="www.bitlinker.ga">
+  <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
+  <meta name="twitter:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
+  <meta name="twitter:image" content="https://www.bitlinker.ga/ogp_1200x630.png">
 </head>
 
 <body>
@@ -178,7 +179,7 @@
           <h5>メイン</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
-<li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
+            <li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
             <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
             <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
             <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
