@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス</title>
+  <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス｜About</title>
   <link rel="shortcut icon" href="./icon.ico">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -27,18 +27,18 @@
   <!-- OGP設定 -->
   <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta property="og:url" content="https://bitlinker.usay05.com">
+  <meta property="og:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
   <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BitLinker_jp">
-  <meta name="twitter:url" content="https://www.bitlinker.ga">
-  <meta name="twitter:domain" content="www.bitlinker.ga">
+  <meta name="twitter:url" content="https://bitlinker.usay05.com">
+  <meta name="twitter:domain" content="bitlinker.usay05.com">
   <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta name="twitter:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-  <meta name="twitter:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="./index.php">ホーム</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="./delete.php">短縮URLを削除</a>
           </li>
           <li class="nav-item">
@@ -99,142 +99,38 @@
 
   <!-- コンテンツ -->
   <div class="flex">
-    <div class="flex_img">
-      <img src="./img/done.svg">
-    </div>
     <div class="flex_txt">
-      <h1>短縮結果</h1>
+      <h1>サービス内容</h1>
       <br>
-
-      <?php
-//POST元の判定
-$host  = $_SERVER['HTTP_REFERER'];
-$str   = parse_url($host);
-$check = 'bad';
-if (stristr($str['host'], "www.bitlinker.ga")) {
-    $check = 'ok';
-}
-
-//URL作成処理関数化
-function shorten()
-{
-    //キーワード
-    $keyword = $_POST['keyword'];
-
-    //元URL
-    $ex_url = $_POST['url'];
-
-    //短縮後URL
-    $your_url = "https://btln.ga/" . $keyword;
-
-    //パス
-    $path = "../btln.ga/" . $keyword;
-    //キーワードが使えるか調べる・正規表現で入力文字制限
-    if (file_exists($path)) {
-        echo('<p>https://btln.ga/' . $keyword . 'は使用できません。</p>');
-    } elseif (preg_match("/^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$/u", $keyword)) {
-        mkdir($path);
-        echo('<p>作成された短縮URLは、' . $your_url . 'です。</p><a href="' . $your_url . '" target="_blank">' . $your_url . '</a><br>');
-
-        //index.phpファイルにリダイレクト内容を書き込み
-        file_put_contents(
-            $path . '/index.php',
-            '<meta name="robots" content="noindex" /> <?php header("Location: ' . $ex_url . '", true, 302); exit; ?>'
-        );
-
-        //URLデータファイル作成
-        $letters_key = str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?!#%&@");
-        $key = substr($letters_key, 0, 6); //削除キー
-        $data_directory = '../data/'; //URLデータ保存ディレクトリ
-        $data_file = $keyword.'.txt'; //URLデータ保存ファイル名
-        $data_path = $data_directory.$data_file; //URLデータパス
-
-        //URLデータ保存ディレクトリがなければ作成
-        if (!file_exists($data_directory)) {
-            mkdir($data_directory);
-        }
-
-        //ファイルデータ書き込み・保存
-        file_put_contents($data_path, $ex_url."\n".$your_url."\n".$key);
-
-        //削除キー
-        echo ('<p>削除キーは'.$key.'です。</p>');
-
-        //URLコピーボタン
-        echo('<br><input id="copyTarget" type="text" value="' . $your_url . '" readonly>');
-        echo('<button onclick="copyToClipboard()">URLをコピー</button>');
-
-        //削除キーコピーボタン
-        echo('<br><input id="copyTarget2" type="text" value="' . $key . '" readonly>');
-        echo('<button onclick="copyToClipboard2()">削除キーをコピー</button>');
-    } else {
-        echo('<p>URLを発行できません。<br>短縮前のURLが正しい形式で入力されているか確認して下さい。<br>「キーワード」に使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。</p>');
-    }
-}
-
-      //POST元がwww.bitlinker.gaだったら短縮URLを作成
-      if ($check == 'ok') {
-          shorten();
-      } else {
-          echo('<p>' . $host . 'から短縮URLを作成しようとしています。<a href="https://www.bitlinker.ga">https://www.bitlinker.ga</a>から作成してください。</p>');
-      }
-      ?>
-
-      <!--URLコピーボタン-->
-      <script>
-        function copyToClipboard() {
-          //コピー対象をJavaScript上で変数として定義する
-          var copyTarget = document.getElementById("copyTarget");
-
-          //コピー対象のテキストを選択する
-          copyTarget.select();
-
-          //選択しているテキストをクリップボードにコピーする
-          document.execCommand("Copy");
-
-          //コピーをお知らせする
-          alert("コピーしました！: " + copyTarget.value);
-        }
-      </script>
-
-      <!--削除キーコピーボタン-->
-      <script>
-        function copyToClipboard2() {
-          //コピー対象をJavaScript上で変数として定義する
-          var copyTarget = document.getElementById("copyTarget2");
-
-          //コピー対象のテキストを選択する
-          copyTarget.select();
-
-          //選択しているテキストをクリップボードにコピーする
-          document.execCommand("Copy");
-
-          //コピーをお知らせする
-          alert("コピーしました！: " + copyTarget.value);
-        }
-      </script>
-      <br><br>
-      <a href="./delete.php">URLの削除はこちら</a>
-      <br><br>
-      <a href="./index.php"><input type="submit" value="戻る" class="button"></a>
+      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができる、純国産のサービスです。
+        <br>短縮URLは、通常の形式（http://~）はもちろん、SSL（https://~）, World Wide Web（http(s)://www.~）に対応しています。
+        <br>全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！
+      </p>
+    </div>
+    <div class="flex_img">
+      <img src="./img/overview.svg">
     </div>
   </div>
 
   <hr>
 
   <div class="flex">
-    <div class="flex_txt">
-      <h1>「利用者様の声」をお寄せ下さい！</h1>
-      <br>
-      <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しています。
-        <br>そこで、実際に使用して頂いている方からコメントを募集しております。
-        <br>以下のフォーム（Googleフォームに飛びます）へ是非、コメントをお寄せ下さい！
-        <br>ご協力、よろしくお願いします！
-      </p>
-      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBwZ-GHi1mQDMgaxXdH_HRsQY6riuJ_sc_JXfE2mWPPxiW2A/viewform?usp=sf_link" target="_blank">「利用者様の声」募集フォーム</a></p>
-    </div>
     <div class="flex_img">
-      <img src="./img/notify.svg">
+      <img src="./img/shorten.svg">
+    </div>
+    <div class="flex_txt">
+      <h1>URLを短縮する！</h1>
+      <br>
+      <form action="./shorten.php" method="post">
+        <input type="url" name="url" class="inText" id="inText1" placeholder="短縮したいURLを入力してください" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
+        <br><br>
+        <input type="text" name="keyword" pattern="^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$" title="使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。" class="inText" id="inText2" placeholder="キーワードを入力してください" onblur="coloeSet(this)"
+          onfocus="colorReset(this)" required="">
+        <br><br>
+        <input type="submit" value="短縮する！" class="button">
+      </form>
+      <br>
+      <p>※「短縮する！」ボタンを押した時点で、<a href="./terms.php">利用規約</a>, <a href="./disclaimer.php">免責事項</a>, <a href="./privacy_policy.php">プライバシーポリシー</a>に同意したものとみなします。</p>
     </div>
   </div>
 
@@ -253,6 +149,7 @@ function shorten()
           <h5>メイン</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
+            <li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
             <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
             <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
             <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>

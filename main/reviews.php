@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./input.css">
   <link rel="stylesheet" href="./submit.css">
   <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="./reviews.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- JavaScript -->
   <script type="text/javascript" src="./input.js"></script>
@@ -27,18 +28,18 @@
   <!-- OGP設定 -->
   <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta property="og:url" content="https://bitlinker.usay05.com">
+  <meta property="og:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
   <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BitLinker_jp">
-  <meta name="twitter:url" content="https://www.bitlinker.ga">
-  <meta name="twitter:domain" content="www.bitlinker.ga">
+  <meta name="twitter:url" content="https://bitlinker.usay05.com">
+  <meta name="twitter:domain" content="bitlinker.usay05.com">
   <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta name="twitter:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-  <meta name="twitter:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
 </head>
 
 <body>
@@ -99,27 +100,48 @@
 
   <!-- コンテンツ -->
   <div class="flex">
+    <div class="flex_img">
+      <img src="./img/review.svg">
+    </div>
     <div class="flex_txt">
-      <h1>短縮URLを削除する！</h1>
+      <h1>利用者様の声</h1>
       <br>
-      <form action="./deleted.php" method="post">
-        <input type="text" name="delete_url" class="inText" id="inText1" placeholder="削除したい短縮URLのキーワードのみ（https://btln.ga/ 以降）を入力して下さい" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
-        <br><br>
-        <input type="text" name="key" class="inText" id="inText2" placeholder="短縮URLの削除用キーを入力して下さい" onblur="coloeSet(this)" onfocus="colorReset(this)" required="">
-        <br><br>
-        <input type="submit" value="削除する！" class="button">
-      </form>
+      <blockquote>
+        <p>Herokuのドメイン、ダサいから隠すのにはもってこいじゃないか！（大彗星 さん）</p>
+      </blockquote>
+
+      <blockquote>
+        <p>クリック一回で短縮URLを作成でき、便利です！
+          <br>
+          また、他のサービスでは短縮できない1000文字を超えるようなURLも短縮できるので利便性が高く、何度も利用させて頂いています。（ActiveTK. さん）
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>日本人の学生が作成・運営している、純国産サービスなので、安心して利用できています！
+          <br>
+          また、最近新しくなったサイトデザインもカッコ良くて気に入っています！（Knu さん）
+        </p>
+      </blockquote>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="flex">
+    <div class="flex_txt">
+      <h1>「利用者様の声」をお寄せ下さい！</h1>
       <br>
-      <p>※削除したい短縮URLの <b><i>https://btln.ga/</i> 以降のみ</b>を入力して下さい。
-        <br>（例： 削除したいURLが <i>https://btln.ga/bitlinker</i> の場合、入力するのは <i>bitlinker</i>）
+      <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しました。
+        <br>そこで、実際に使用して頂いている方からコメントを募集しております。
+        <br>以下のフォーム（Googleフォームに飛びます）へ是非、コメントをお寄せ下さい！
+        <br>ご協力、よろしくお願いします！
       </p>
-      <p>※削除用キーとは短縮URLの作成時に自動的に発行されたキーのことです。忘れてしまった場合は原則的に削除できません。
-        <br>
-        どうしても削除したいという方は管理人までご連絡下さい。
-      </p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBwZ-GHi1mQDMgaxXdH_HRsQY6riuJ_sc_JXfE2mWPPxiW2A/viewform?usp=sf_link" target="_blank">「利用者様の声」募集フォーム</a></p>
     </div>
     <div class="flex_img">
-      <img src="./img/delete.svg">
+      <img src="./img/notify.svg">
     </div>
   </div>
 

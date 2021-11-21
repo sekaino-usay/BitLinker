@@ -1,0 +1,16 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 400 https://error.usay05.com/400.php
+ErrorDocument 401 https://error.usay05.com/401.php
+ErrorDocument 403 https://error.usay05.com/403.php
+ErrorDocument 404 https://error.usay05.com/404.php
+ErrorDocument 500 https://error.usay05.com/500.php
+ErrorDocument 503 https://error.usay05.com/503.php
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(bitlinker\.ga)(:443)? [NC]
+RewriteRule ^(.*) https://bitlinker.usay05.com/$1 [R=301,L]
+order deny,allow
+
+php_flag display_errors Off

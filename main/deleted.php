@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./input.css">
   <link rel="stylesheet" href="./submit.css">
   <link rel="stylesheet" href="./footer.css">
-  <link rel="stylesheet" href="./reviews.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- JavaScript -->
   <script type="text/javascript" src="./input.js"></script>
@@ -28,18 +27,18 @@
   <!-- OGP設定 -->
   <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta property="og:url" content="https://bitlinker.usay05.com">
+  <meta property="og:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
   <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BitLinker_jp">
-  <meta name="twitter:url" content="https://www.bitlinker.ga">
-  <meta name="twitter:domain" content="www.bitlinker.ga">
+  <meta name="twitter:url" content="https://bitlinker.usay05.com">
+  <meta name="twitter:domain" content="bitlinker.usay05.com">
   <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta name="twitter:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-  <meta name="twitter:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
 </head>
 
 <body>
@@ -100,48 +99,43 @@
 
   <!-- コンテンツ -->
   <div class="flex">
-    <div class="flex_img">
-      <img src="./img/review.svg">
-    </div>
     <div class="flex_txt">
-      <h1>利用者様の声</h1>
+      <h1>短縮URLを削除する！</h1>
       <br>
-      <blockquote>
-        <p>Herokuのドメイン、ダサいから隠すのにはもってこいじゃないか！（大彗星 さん）</p>
-      </blockquote>
+      <?php
+      //受け取りデータ
+      $keyword = $_POST['delete_url'];
+      $key = $_POST['key'];
+      $url = 'https://btln.ga/'.$keyword;
 
-      <blockquote>
-        <p>クリック一回で短縮URLを作成でき、便利です！
-          <br>
-          また、他のサービスでは短縮できない1000文字を超えるようなURLも短縮できるので利便性が高く、何度も利用させて頂いています。（ActiveTK. さん）
-        </p>
-      </blockquote>
+      $data_directory = '../data/'; //URLデータが保存してあるディレクトリ
+      $data_file = $keyword.'.txt'; //URLデータファイル名
+      $data_path = $data_directory.$data_file; //URLデータファイルのパス
+      $del_file = '../btln.ga/'.$keyword.'/index.php';
+      $del_directory = '../btln.ga/'.$keyword;
 
-      <blockquote>
-        <p>日本人の学生が作成・運営している、純国産サービスなので、安心して利用できています！
-          <br>
-          また、最近新しくなったサイトデザインもカッコ良くて気に入っています！（Knu さん）
-        </p>
-      </blockquote>
+      //ファイルデータ読み込み
+      $data = file($data_path, FILE_IGNORE_NEW_LINES);
+      $ex_url_data = $data[0];
+      $shorten_url_data = $data[1];
+      $key_data = $data[2];
 
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="flex">
-    <div class="flex_txt">
-      <h1>「利用者様の声」をお寄せ下さい！</h1>
-      <br>
-      <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しました。
-        <br>そこで、実際に使用して頂いている方からコメントを募集しております。
-        <br>以下のフォーム（Googleフォームに飛びます）へ是非、コメントをお寄せ下さい！
-        <br>ご協力、よろしくお願いします！
-      </p>
-      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBwZ-GHi1mQDMgaxXdH_HRsQY6riuJ_sc_JXfE2mWPPxiW2A/viewform?usp=sf_link" target="_blank">「利用者様の声」募集フォーム</a></p>
+      if (empty($keyword)||empty($key)) {
+          echo "<p>削除したいURLのキーワード、削除キーが入力されているか確認して下さい。</p>"; //未入力
+      } elseif (!file_exists($data_path)) {
+          echo "<p>URLが存在しません。削除したいURLが存在するか、もう一度ご確認ください。</p>"; //ファイルが存在するか確認
+      } elseif ($url===$shorten_url_data && $key===$key_data) {
+          unlink($del_file);
+          rmdir($del_directory);
+          unlink($data_path);
+          echo "<p>URLは正常に削除されました！またのご利用をお待ちしています！</p>"; //削除
+      } else {
+          echo "<p>URLが存在しないか、削除キーが違います。</p>";
+      }
+      ?>
     </div>
     <div class="flex_img">
-      <img src="./img/notify.svg">
+      <img src="./img/delete.svg">
     </div>
   </div>
 

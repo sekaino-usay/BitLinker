@@ -27,18 +27,18 @@
   <!-- OGP設定 -->
   <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.bitlinker.ga">
-  <meta property="og:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta property="og:url" content="https://bitlinker.usay05.com">
+  <meta property="og:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
   <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta property="og:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BitLinker_jp">
-  <meta name="twitter:url" content="https://www.bitlinker.ga">
-  <meta name="twitter:domain" content="www.bitlinker.ga">
+  <meta name="twitter:url" content="https://bitlinker.usay05.com">
+  <meta name="twitter:domain" content="bitlinker.usay05.com">
   <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
   <meta name="twitter:description" content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-  <meta name="twitter:image" content="https://www.bitlinker.ga/img/ogp_1200x630.png">
+  <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
 </head>
 
 <body>
@@ -100,42 +100,45 @@
   <!-- コンテンツ -->
   <div class="flex">
     <div class="flex_txt">
-      <h1>短縮URLを削除する！</h1>
+      <h1>サービス内容</h1>
       <br>
-      <?php
-      //受け取りデータ
-      $keyword = $_POST['delete_url'];
-      $key = $_POST['key'];
-      $url = 'https://btln.ga/'.$keyword;
-
-      $data_directory = '../data/'; //URLデータが保存してあるディレクトリ
-      $data_file = $keyword.'.txt'; //URLデータファイル名
-      $data_path = $data_directory.$data_file; //URLデータファイルのパス
-      $del_file = '../btln.ga/'.$keyword.'/index.php';
-      $del_directory = '../btln.ga/'.$keyword;
-
-      //ファイルデータ読み込み
-      $data = file($data_path, FILE_IGNORE_NEW_LINES);
-      $ex_url_data = $data[0];
-      $shorten_url_data = $data[1];
-      $key_data = $data[2];
-
-      if (empty($keyword)||empty($key)) {
-          echo "<p>削除したいURLのキーワード、削除キーが入力されているか確認して下さい。</p>"; //未入力
-      } elseif (!file_exists($data_path)) {
-          echo "<p>URLが存在しません。削除したいURLが存在するか、もう一度ご確認ください。</p>"; //ファイルが存在するか確認
-      } elseif ($url===$shorten_url_data && $key===$key_data) {
-          unlink($del_file);
-          rmdir($del_directory);
-          unlink($data_path);
-          echo "<p>URLは正常に削除されました！またのご利用をお待ちしています！</p>"; //削除
-      } else {
-          echo "<p>URLが存在しないか、削除キーが違います。</p>";
-      }
-      ?>
+      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができる、純国産のサービスです。
+        <br>SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！
+      </p>
     </div>
     <div class="flex_img">
-      <img src="./img/delete.svg">
+      <img src="./img/overview.svg">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="flex">
+    <div class="flex_img">
+      <img src="./img/how_to_use.svg">
+    </div>
+    <div class="flex_txt">
+      <h1>使い方</h1>
+      <br>
+      <p>短縮前のURL、<i>btln.ga/</i> に続けたいキーワードを入力し、「短縮する！」ボタンを押してください。
+        <br>
+        「キーワード」に使用できる文字は、<b>半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)</b>です。
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="flex">
+    <div class="flex_txt">
+      <h1>バグ・脆弱性</h1>
+      <br>
+      <p>発見済のバグ・脆弱性一覧は<a href="./bug.php">こちら</a>です。解決策等教えていただけるとありがたいです。
+        <br>また、新たなバグ・脆弱性を見つけたら、<a href="./bug_report.php">こちら</a>へ報告して下さい。
+      </p>
+    </div>
+    <div class="flex_img">
+      <img src="./img/bug_fix.svg">
     </div>
   </div>
 
@@ -176,7 +179,7 @@
           <h5>メイン</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-muted">ホーム</a></li>
-<li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
+            <li class="nav-item mb-2"><a href="./delete.php" class="nav-link p-0 text-muted">短縮URLを削除</a></li>
             <li class="nav-item mb-2"><a href="./about.php" class="nav-link p-0 text-muted">BitLinkerについて</a></li>
             <li class="nav-item mb-2"><a href="./reviews.php" class="nav-link p-0 text-muted">利用者様の声</a></li>
             <li class="nav-item mb-2"><a href="./contact.php" class="nav-link p-0 text-muted">お問い合わせ</a></li>
