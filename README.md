@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/68147174/138474210-44b9e94c-3276-413a-
 
 # Note
 
-ご利用の際は、[利用規約](https://www.bitlinker.ga/terms.php)・[免責事項](https://www.bitlinker.ga/disclaimer.php)・[プライバシーポリシー](https://www.bitlinker.ga/privacy_policy.php)を必ずお読み下さい。
+ご利用の際は、[利用規約](https://bitlinker.usay05.com/terms.php)・[免責事項](https://bitlinker.usay05.com/disclaimer.php)・[プライバシーポリシー](https://bitlinker.usay05.com/privacy_policy.php)を必ずお読み下さい。
 また、違法性・危険性の高いと思われる短縮URL、不適切だと思われる短縮URL等を発見された場合は、[専用のフォーム](https://www.bitlinker.ga/url_report.php)へご連絡下さい。
 
 # Author
