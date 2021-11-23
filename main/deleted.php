@@ -111,8 +111,8 @@
       $data_directory = '../data/'; //URLデータが保存してあるディレクトリ
       $data_file = $keyword.'.txt'; //URLデータファイル名
       $data_path = $data_directory.$data_file; //URLデータファイルのパス
-      $del_file = '../btln.ga/'.$keyword.'/index.php';
-      $del_directory = '../btln.ga/'.$keyword;
+      $del_file = '../shorten/'.$keyword.'/index.php';
+      $del_directory = '../shorten/'.$keyword;
 
       //ファイルデータ読み込み
       $data = file($data_path, FILE_IGNORE_NEW_LINES);

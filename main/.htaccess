@@ -9,8 +9,9 @@ ErrorDocument 404 https://error.usay05.com/404.php
 ErrorDocument 500 https://error.usay05.com/500.php
 ErrorDocument 503 https://error.usay05.com/503.php
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(bitlinker\.ga)(:443)? [NC]
+RewriteCond %{HTTP_HOST} ^(www\.bitlinker\.usay05\.com)(:443)? [NC]
 RewriteRule ^(.*) https://bitlinker.usay05.com/$1 [R=301,L]
+DirectoryIndex index.php index.html
 order deny,allow
 
 php_flag display_errors Off
