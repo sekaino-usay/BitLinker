@@ -1,4 +1,4 @@
-(https://user-images.githubusercontent.com/68147174/138475675-3f00fcf3-adc7-4309-a7df-2a9f7dca9f2e.png)[https://bitlinker.usay05.com]
+[https://user-images.githubusercontent.com/68147174/138475675-3f00fcf3-adc7-4309-a7df-2a9f7dca9f2e.png](https://bitlinker.usay05.com)
 
 # BitLinker
 
