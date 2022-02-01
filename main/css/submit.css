@@ -1,32 +1,25 @@
 /* 「短縮する！」ボタン */
 .button {
   display: inline-block;
-  border-radius: 5%;
-  /* 角丸       */
-  font-size: 15pt;
-  /* 文字サイズ */
-  text-align: center;
-  /* 文字位置   */
-  cursor: pointer;
-  /* カーソル   */
-  padding: 12px 12px;
-  /* 余白       */
-  background: #00a3e3;
-  /* 背景色     */
-  color: #ffffff;
-  /* 文字色     */
-  line-height: 1em;
-  /* 1行の高さ  */
-  transition: .3s;
-  /* なめらか変化 */
-  border: 2px solid #00a3e3;
-  /* 枠の指定 */
+  border-radius: 5%; /* 角丸       */
+  font-size: 15pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: linear-gradient(90deg, #08aeea 0%, #2af598 100%); /* 背景色     */
+  color: #ffffff; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  border: 2px solid #ffffff; /* 枠の指定 */
 }
 
 /* ボタンが押されたら */
 .button:hover {
-  color: #00a3e3;
-  /* 背景色     */
-  background: #ffffff;
-  /* 文字色     */
+  color: #ffffff; /* 文字色     */
+  background: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  ); /* 背景色     */
 }

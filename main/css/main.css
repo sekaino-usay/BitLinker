@@ -12,7 +12,7 @@ tr,
 td,
 input,
 textarea {
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 h1,
@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 /* 区切り線 */
@@ -29,10 +29,18 @@ hr {
   height: 10px;
   border-width: 100%;
   background-color: #00bcd4;
-  background-image: -webkit-linear-gradient(left,
-      #00bcd4 0%, #283593 50%, #00bcd4 100%);
-  background-image: linear-gradient(90deg,
-      #00bcd4 0%, #283593 50%, #00bcd4 100%);
+  background-image: -webkit-linear-gradient(
+    left,
+    #00bcd4 0%,
+    #283593 50%,
+    #00bcd4 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    #00bcd4 0%,
+    #283593 50%,
+    #00bcd4 100%
+  );
 }
 
 /* ナビゲーションとコンテンツが重ならないように */
@@ -55,7 +63,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .flex_img {
@@ -63,5 +71,5 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }

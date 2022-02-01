@@ -23,8 +23,8 @@ table.formTable th {
   text-align: left;
 }
 
-/*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
-@media screen and (max-width:572px) {
+/* 簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい） */
+@media screen and (max-width: 572px) {
   #formWrap {
     width: 100%;
     margin: 0 auto;
@@ -80,7 +80,7 @@ table.formTable th {
   /* 入力文字の色   */
   font-weight: bold;
   /* 入力文字の太字 */
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   /* 入力文字の間隔 */
 }
 
@@ -107,6 +107,6 @@ table.formTable th {
   /* 入力文字の色   */
   font-weight: bold;
   /* 入力文字の太字 */
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   /* 入力文字の間隔 */
 }

@@ -1,0 +1,20 @@
+.bitlinker_ad {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.bitlinker_ad button {
+  width: 100%;
+  height: auto;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bitlinker_ad img {
+  display: inline-block;
+}

@@ -46,6 +46,16 @@
     <meta name="twitter:description"
         content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
     <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
+    <!-- Ko-fi support -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+    kofiWidgetOverlay.draw('sekaino_usay', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support Me',
+        'floating-chat.donateButton.background-color': '#83cc97',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+    </script>
 </head>
 
 <body>
@@ -54,7 +64,9 @@
     <noscript><img src="//accaii.com/bitlinker/script?guid=on"></noscript>
 
     <!-- ナビゲーション -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #83cc97;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+">
         <div class="container-xl">
 
             <a class="navbar-brand" href="./index">
@@ -97,6 +109,9 @@
                             <li><a class="dropdown-item" href="./disclaimer">免責事項</a></li>
                             <li><a class="dropdown-item" href="./privacy_policy">プライバシーポリシー</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./develop">開発者向け機能</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact">お問い合わせ</a>
@@ -181,6 +196,10 @@
     <!-- Moons APPS ad start -->
     <script class="moons_apps_ad_banner moons_apps_ad_auto" src="https://apps.moons14.com/ad/js/banner.js"></script>
     <!-- Moons APPS ad end -->
+    <br>
+    <!-- BitLinker Ad Start -->
+    <script class="bitlinker_ad" src="https://bitlinker.usay05.com/ad/banner.js"></script>
+    <!-- BitLinker Ad End -->
 
     <hr>
 
@@ -194,8 +213,8 @@
                         <li class="nav-item mb-2"><a href="./index" class="nav-link p-0 text-muted">ホーム</a></li>
                         <li class="nav-item mb-2"><a href="./delete" class="nav-link p-0 text-muted">短縮URLを削除</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="./about"
-                                class="nav-link p-0 text-muted">BitLinkerについて</a></li>
+                        <li class="nav-item mb-2"><a href="./about" class="nav-link p-0 text-muted">BitLinkerについて</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="./reviews" class="nav-link p-0 text-muted">利用者様の声</a>
                         </li>
                         <li class="nav-item mb-2"><a href="./contact" class="nav-link p-0 text-muted">お問い合わせ</a>
@@ -206,8 +225,8 @@
                 <div class="col-2">
                     <h5>セキュリティ</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="./bug_report"
-                                class="nav-link p-0 text-muted">バグ・脆弱性報告</a></li>
+                        <li class="nav-item mb-2"><a href="./bug_report" class="nav-link p-0 text-muted">バグ・脆弱性報告</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="./url_report" class="nav-link p-0 text-muted">短縮URL報告</a>
                         </li>
                         <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ホワイトハッカー</a></li> -->
@@ -233,7 +252,8 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col">
-                                <p>Illustrations by <a href="https://storyset.com" target="_blank">Storyset</a></p>
+                                <p>Illustrations by <a href="https://storyset.com" target="_blank">Storyset</a>, <a
+                                        href="https://undraw.co" target="_blank">unDraw</a></p>
                             </div>
                             <div class="col">
                                 <ul class="follow-me">
