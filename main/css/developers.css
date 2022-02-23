@@ -1,0 +1,52 @@
+div#developers a i {
+  display: inline-block;
+  background-color: #eee;
+  font-size: 1.9rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0 4px;
+  color: #335;
+  border-radius: 20%;
+  transition: all 0.3s ease;
+}
+
+div#developers a i.bi-twitter:hover {
+  background-color: #55acee;
+  color: white;
+}
+
+div#developers a i.bi-github:hover {
+  background-color: #334;
+  color: white;
+}
+
+div#developers a i.bi-globe:hover {
+  background-color: #3ab;
+  color: white;
+}
+
+div#developers a i::before {
+  vertical-align: baseline;
+  font-size: 1.5rem;
+}
+
+div#developers div.col-md {
+  margin-bottom: 15px;
+}
+
+div#developers div.col-md img {
+  border-radius: 10%;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 1400px) {
+  div#developers div.col-md img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  div#developers div.col-md img {
+    width: 75px;
+  }
+}

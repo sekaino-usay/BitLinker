@@ -1,0 +1,3 @@
+$(() => {
+  $("#bigdiv").css("display", "none");
+})

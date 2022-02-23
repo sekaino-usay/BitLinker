@@ -19,11 +19,10 @@ table.formTable th {
 table.formTable th {
   width: 30%;
   font-weight: normal;
-  background: #efefef;
   text-align: left;
 }
 
-/* 簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい） */
+/* 簡易版レスポンシブ用CSS（必要最低限のみとしています．ブレークポイントも含め自由に設定下さい） */
 @media screen and (max-width: 572px) {
   #formWrap {
     width: 100%;

@@ -2,115 +2,16 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス</title>
-    <link rel="shortcut icon" href="./img/icon.ico">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/input.css">
-    <link rel="stylesheet" href="./css/submit.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- JavaScript -->
-    <script type="text/javascript" src="./js/input.js"></script>
-    <!-- Googleフォント -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
-    <!-- Googleアドセンス -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363201401295069"
-        crossorigin="anonymous"></script>
-    <script data-ad-client="ca-pub-7363201401295069" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- OGP設定 -->
-    <meta property="og:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bitlinker.usay05.com">
-    <meta property="og:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
-    <meta property="og:site_name" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
-    <meta property="og:description"
-        content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-    <!-- Twitterカード -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@BitLinker_jp">
-    <meta name="twitter:url" content="https://bitlinker.usay05.com">
-    <meta name="twitter:domain" content="bitlinker.usay05.com">
-    <meta name="twitter:title" content="BitLinker - 登録不要・純国産のカスタム短縮URL作成サービス">
-    <meta name="twitter:description"
-        content="完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができます。SSL（https://~）対応＆全データ日本国内にあるサーバーで厳重に保管されているため、安心してお使いいただけます！">
-    <meta name="twitter:image" content="https://bitlinker.usay05.com/img/ogp_1200x630.png">
+    <?php include_once __DIR__ . "/static/head/head.php"; ?>
 </head>
 
 <body>
     <!-- アクセス解析 -->
-    <script src="//accaii.com/bitlinker/script.js" async></script>
-    <noscript><img src="//accaii.com/bitlinker/script?guid=on"></noscript>
+    <script src="https://accaii.com/bitlinker/script.js" async></script>
+    <noscript><img src="https://accaii.com/bitlinker/script?guid=on"></noscript>
 
     <!-- ナビゲーション -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FA8BFF;
-background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
-">
-        <div class="container-xl">
-
-            <a class="navbar-brand" href="./index">
-                <img src="./img/logo.png" height="50">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
-                aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample07XL">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="./index">ホーム</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./delete">短縮URLを削除</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about">BitLinkerについて</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reviews">利用者様の声</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown"
-                            aria-expanded="false">セキュリティ</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
-                            <li><a class="dropdown-item" href="./bug_report">バグ・脆弱性報告</a></li>
-                            <li><a class="dropdown-item" href="./url_report">短縮URL報告</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown"
-                            aria-expanded="false">ご利用にあたって</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
-                            <li><a class="dropdown-item" href="./terms">利用規約</a></li>
-                            <li><a class="dropdown-item" href="./disclaimer">免責事項</a></li>
-                            <li><a class="dropdown-item" href="./privacy_policy">プライバシーポリシー</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./develop">開発者向け機能</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact">お問い合わせ</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include_once __DIR__ . "/static/header/header.php"; ?>
 
     <!-- コンテンツ -->
     <div class="flex">
@@ -122,114 +23,158 @@ background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
             <br>
 
             <?php
+
             //POST元の判定
-            $host  = $_SERVER['HTTP_REFERER'];
-            $str   = parse_url($host);
-            $check = 'bad';
-            if (stristr($str['host'], "bitlinker.usay05.com")) {
-                $check = 'ok';
-            }
+            $referer  = $_SERVER['HTTP_REFERER'];
+            $host   = parse_url($referer);
+            $isRefererCorrect = stristr($host['host'], "bitlinker.usay05.com") ? true : false;
 
             //URL作成処理関数化
             function shorten()
             {
-                //キーワード
                 $keyword = $_POST['keyword'];
 
-                //元URL
                 $ex_url = $_POST['url'];
+                $ex_url = @trim($ex_url);
+                $ex_url = str_replace('"', "", $ex_url);
+                $ex_url = str_replace("'", "", $ex_url);
+                $ex_url = str_replace("\n", "", $ex_url);
+                $ex_url = str_replace("\r", "", $ex_url);
+                $ex_url = str_replace("\0", "", $ex_url);
 
-                //短縮後URL
-                $your_url = "https://btln.ga/" . $keyword;
+                $shorten_url = "https://btln.ga/" . $keyword;
+                $path = "../shorten/" . @basename($keyword);
+                $ex_url_preg = "/^https?:\/\/[\-_!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+\.[\-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+$/u";
+                $keyword_preg = "/^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$/u";
 
-                //パス
-                $path = "../shorten/" . $keyword;
+                //Google Safe Browsing APIでURLが悪意のあるものかどうかを判定
+                @$ex_url = $_POST['url'];
+                $safe_browsing_api_key = "AIzaSyDcQ_L0dnDH3OAJzzC84Sg4Y9cKJydkYfg";
+                $safe_browsing_api_url = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=" . $safe_browsing_api_key;
+                $safe_browsing_api_body = array(
+                    "client" => array(
+                        "clientId" => "BitLinker",
+                        "clientVersion" => "4.0.0"
+                    ),
+                    "threatInfo" => array(
+                        "threatTypes" => array("MALWARE", "SOCIAL_ENGINEERING", "UNWANTED_SOFTWARE", "POTENTIALLY_HARMFUL_APPLICATION"),
+                        "platformTypes" => array("ANY_PLATFORM"),
+                        "threatEntryTypes" => array("URL"),
+                        "threatEntries" => array(
+                            array(
+                                "url" => $ex_url
+                            )
+                        )
+                    )
+                );
+                //curlでAPIにPOST
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $safe_browsing_api_url);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($safe_browsing_api_body));
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                    'Content-Type: application/json'
+                ));
+                $response = curl_exec($ch);
+                curl_close($ch);
+                //APIのレスポンスをJSON形式で解析
+                $response_json = json_decode($response, true);
+                //レスポンスの中身を確認
+                if (isset($response_json["matches"])) {
+                    $isDangerous = true;
+                } else {
+                    $isDangerous = false;
+                }
+
                 //キーワードが使えるか調べる・正規表現で入力文字制限
                 if (file_exists($path)) {
-                    echo ('<p>https://btln.ga/' . $keyword . 'は使用できません。</p>');
-                } elseif (preg_match("/^[一-龠ぁ-んーァ-ヶー0-9０-９a-zａ-ｚA-ZＡ-Ｚ\-_\.]+$/u", $keyword)) {
-                    mkdir($path);
-                    echo ('<p>作成された短縮URLは、' . $your_url . 'です。</p><a href="' . $your_url . '" target="_blank">' . $your_url . '</a><br>');
+                    echo ('<p>https://btln.ga/' . htmlspecialchars($keyword) . 'は使用できません．</p>');
+                } elseif ($isDangerous == true) {
+                    echo ('<p>' . $ex_url . ' は危険なURLである可能性が高いため，短縮URLを発行できません．</p>');
+                } elseif (preg_match($keyword_preg, $keyword) && preg_match($ex_url_preg, $ex_url)) {
+                    @mkdir($path);
+                    $shorten_url = htmlspecialchars($shorten_url);
+                    echo '<p>作成された短縮URLは，' . $shorten_url . 'です．</p><a href="' . $shorten_url . '" target="_blank">' . $shorten_url . '</a><br>';
 
-                    //indexファイルにリダイレクト内容を書き込み
                     file_put_contents(
                         $path . '/index.php',
-                        '<meta name="robots" content="noindex" /> <?php header("Location: ' . $ex_url . '", true, 302); exit; ?>'
-            );
+                        '<?php header("Location: ' . $ex_url . '", true, 302); ?>' . '<meta name="robots" content="noindex, nofollow">'
+                    ) or die("<p>ファイル書き込み時にエラーが発生しました。一定時間を空けてから、再度お試しください。</p>");
 
-            //URLデータファイル作成
-            $letters_key = str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?!#%&@");
-            $key = substr($letters_key, 0, 6); //削除キー
-            $data_directory = '../data/'; //URLデータ保存ディレクトリ
-            $data_file = $keyword . '.txt'; //URLデータ保存ファイル名
-            $data_path = $data_directory . $data_file; //URLデータパス
+                    $bytes = openssl_random_pseudo_bytes(3); // パスワード用の暗号学的に安全な乱数を生成
+                    $str = bin2hex($bytes);
+                    $str2 = substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?!#%&@'), 0, 12);
+                    $rm_key = substr(str_shuffle($str . $str2), 0, -12);
 
-            //URLデータ保存ディレクトリがなければ作成
-            if (!file_exists($data_directory)) {
-            mkdir($data_directory);
-            }
+                    $data_directory = '../data/'; //URLデータ保存ディレクトリ
+                    $data_file = @basename($keyword) . '.txt'; //URLデータ保存ファイル名
+                    $data_path = $data_directory . $data_file; //URLデータパス
+                    $ip = $_SERVER['REMOTE_ADDR']; //IPアドレス
 
-            //ファイルデータ書き込み・保存
-            file_put_contents($data_path, $ex_url . "\n" . $your_url . "\n" . $key);
+                    //URLデータ保存ディレクトリがなければ作成
+                    if (!file_exists($data_directory)) {
+                        @mkdir($data_directory);
+                    }
 
-            //削除キー
-            echo ('<p>削除キーは' . $key . 'です。</p>');
+                    //ファイルデータ書き込み・保存
+                    file_put_contents($data_path, $ex_url . "\n" . $shorten_url . "\n" . $rm_key . "\n" . $ip);
 
-            //URLコピーボタン
-            echo ('<br><input id="copyTarget" type="text" value="' . $your_url . '" readonly>');
-            echo ('<button onclick="copyToClipboard()">URLをコピー</button>');
+                    //削除キー
+                    echo ('<p>削除キーは<span id="rm_key">' . $rm_key . '</span>です．</p>');
 
-            //削除キーコピーボタン
-            echo ('<br><input id="copyTarget2" type="text" value="' . $key . '" readonly>');
-            echo ('<button onclick="copyToClipboard2()">削除キーをコピー</button>');
-            } else {
-            echo ('<p>
-                URLを発行できません。<br>短縮前のURLが正しい形式で入力されているか確認して下さい。<br>「キーワード」に使用できる文字は、半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です。
-            </p>');
-            }
+                    //URLコピーボタン
+                    echo ('<br><input id="copyTarget" type="text" value="' . $shorten_url . '" readonly>');
+                    echo ('<button onclick="copyToClipboard()">URLをコピー</button>');
+
+                    //削除キーコピーボタン
+                    echo ('<br><input id="copyTarget2" type="text" value="' . $rm_key . '" readonly>');
+                    echo ('<button onclick="copyToClipboard2()">削除キーをコピー</button>');
+                } else {
+                    echo ('<p>URLを発行できません．<br>短縮前のURLが正しい形式で入力されているか確認して下さい．<br>「キーワード」に使用できる文字は，半角英数字・全角ひらがな・全角カタカナ・漢字・-（ハイフン）・_（アンダーバー）.(ドット)です．</p>');
+                }
             }
 
             //POST元がbitlinker.usay05.comだったら短縮URLを作成
-            if ($check == 'ok') {
-            shorten();
+            if ($isRefererCorrect) {
+                shorten();
             } else {
-            echo ('<p>' . $host . 'から短縮URLを作成しようとしています。<a
-                    href="https://bitlinker.usay05.com">https://bitlinker.usay05.com</a>から作成してください。</p>');
+                echo ('<p>' . $referer . 'から短縮URLを作成しようとしています．<a href="https://bitlinker.usay05.com">https://bitlinker.usay05.com</a>から作成してください．</p>');
             }
             ?>
 
             <!--URLコピーボタン-->
             <script>
-            function copyToClipboard() {
-                //コピー対象をJavaScript上で変数として定義する
-                var copyTarget = document.getElementById("copyTarget");
+                function copyToClipboard() {
+                    //コピー対象をJavaScript上で変数として定義する
+                    var copyTarget = document.getElementById("copyTarget");
 
-                //コピー対象のテキストを選択する
-                copyTarget.select();
+                    //コピー対象のテキストを選択する
+                    copyTarget.select();
 
-                //選択しているテキストをクリップボードにコピーする
-                document.execCommand("Copy");
+                    //選択しているテキストをクリップボードにコピーする
+                    document.execCommand("Copy");
 
-                //コピーをお知らせする
-                alert("コピーしました！: " + copyTarget.value);
-            }
+                    //コピーをお知らせする
+                    alert("コピーしました！: " + copyTarget.value);
+                }
             </script>
 
             <!--削除キーコピーボタン-->
             <script>
-            function copyToClipboard2() {
-                //コピー対象をJavaScript上で変数として定義する
-                var copyTarget = document.getElementById("copyTarget2");
+                function copyToClipboard2() {
+                    //コピー対象をJavaScript上で変数として定義する
+                    var copyTarget = document.getElementById("copyTarget2");
 
-                //コピー対象のテキストを選択する
-                copyTarget.select();
+                    //コピー対象のテキストを選択する
+                    copyTarget.select();
 
-                //選択しているテキストをクリップボードにコピーする
-                document.execCommand("Copy");
+                    //選択しているテキストをクリップボードにコピーする
+                    document.execCommand("Copy");
 
-                //コピーをお知らせする
-                alert("コピーしました！: " + copyTarget.value);
-            }
+                    //コピーをお知らせする
+                    alert("コピーしました！: " + copyTarget.value);
+                }
             </script>
             <br><br>
             <a href="./delete">URLの削除はこちら</a>
@@ -244,13 +189,12 @@ background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
         <div class="flex_txt">
             <h1>「利用者様の声」をお寄せ下さい！</h1>
             <br>
-            <p>BitLinkerサイトデザインの変更に伴い、「利用者様の声」ページを新たに作成しています。
-                <br>そこで、実際に使用して頂いている方からコメントを募集しております。
-                <br>以下のフォーム（Googleフォームに飛びます）へ是非、コメントをお寄せ下さい！
-                <br>ご協力、よろしくお願いします！
+            <p>BitLinkerサイトデザインの変更に伴い，「利用者様の声」ページを新たに作成しています．
+                <br>そこで，実際に使用して頂いている方からコメントを募集しております．
+                <br>以下のフォーム（Googleフォームに飛びます）へ是非，コメントをお寄せ下さい！
+                <br>ご協力，よろしくお願いします！
             </p>
-            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBwZ-GHi1mQDMgaxXdH_HRsQY6riuJ_sc_JXfE2mWPPxiW2A/viewform?usp=sf_link"
-                    target="_blank">「利用者様の声」募集フォーム</a></p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBwZ-GHi1mQDMgaxXdH_HRsQY6riuJ_sc_JXfE2mWPPxiW2A/viewform?usp=sf_link" target="_blank">「利用者様の声」募集フォーム</a></p>
         </div>
         <div class="flex_img">
             <img src="./img/notify.svg">
@@ -265,65 +209,7 @@ background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
     <hr>
 
     <!-- フッター -->
-    <div class="container">
-        <footer class="py-5">
-            <div class="row">
-                <div class="col-2">
-                    <h5>メイン</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="./index" class="nav-link p-0 text-muted">ホーム</a></li>
-                        <li class="nav-item mb-2"><a href="./about" class="nav-link p-0 text-muted">BitLinkerについて</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="./reviews" class="nav-link p-0 text-muted">利用者様の声</a></li>
-                        <li class="nav-item mb-2"><a href="./contact" class="nav-link p-0 text-muted">お問い合わせ</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-2">
-                    <h5>セキュリティ</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="./bug_report" class="nav-link p-0 text-muted">バグ・脆弱性報告</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="./url_report" class="nav-link p-0 text-muted">短縮URL報告</a>
-                        </li>
-                        <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ホワイトハッカー</a></li> -->
-                    </ul>
-                </div>
-
-                <div class="col-2">
-                    <h5>ご利用にあたって</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="./terms" class="nav-link p-0 text-muted">利用規約</a></li>
-                        <li class="nav-item mb-2"><a href="./disclaimer" class="nav-link p-0 text-muted">免責事項</a></li>
-                        <li class="nav-item mb-2"><a href="./privacy_policy"
-                                class="nav-link p-0 text-muted">プライバシーポリシー</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-4 offset-1">
-                    <a href="./index"><img src="./img/logo.png" width="100%"></a>
-                    <br><br>
-                    <p>© 2021 <a href="https://www.usay05.com/" target="_blank">U_SAY</a> All Rights Reserved.</p>
-
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p>Illustrations by <a href="https://storyset.com" target="_blank">Storyset</a>, <a
-                                        href="https://undraw.co" target="_blank">unDraw</a></p>
-                            </div>
-                            <div class="col">
-                                <ul class="follow-me">
-                                    <li><a href="https://twitter.com/sekaino_usay" target="_blank"></a></li>
-                                    <li><a href="https://github.com/sekaino-usay" target="_blank"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-    </div>
+    <?php include_once __DIR__ . "/static/footer/footer.php"; ?>
 </body>
 
 </html>

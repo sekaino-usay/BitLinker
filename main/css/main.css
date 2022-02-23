@@ -12,7 +12,7 @@ tr,
 td,
 input,
 textarea {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 h1,
@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Yusei Magic", sans-serif;
+  font-family: 'RocknRoll One', sans-serif;
 }
 
 /* 区切り線 */
@@ -51,6 +51,34 @@ body {
   margin-left: auto;
 }
 
+#navbar {
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+
+#back-fade {
+  opacity: 0;
+  background-color: black;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1010;
+  transition: all 0.5s ease;
+}
+
+#back-fade.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+
 /* テキスト・画像の配置調節 */
 .flex {
   display: flex;
@@ -72,4 +100,30 @@ body {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+body > div.flex {
+  padding: 5px 10px !important;
+}
+
+hr#bigdiv {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 348px) {
+  a.navbar-brand img {
+    height: 35px;
+  }
+}
+
+/* @media screen and (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  body > div.flex div.flex_img {
+    display: none;
+  }
 }
