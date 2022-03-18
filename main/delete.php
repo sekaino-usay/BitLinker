@@ -26,12 +26,10 @@
         <input type="submit" value="削除する！" class="button">
       </form>
       <br>
-      <p>※削除したい短縮URLの <b><i>https://btln.ga/</i> 以降のみ</b>を入力して下さい．
-        <br>（例： 削除したいURLが <i>https://btln.ga/bitlinker</i> の場合，入力するのは <i>bitlinker</i>）
-      </p>
+      <p>※削除したい短縮URLの <b><i>https://btln.ga/</i> 以降のみ</b>を入力して下さい．</p>
+      <p>（例： 削除したいURLが <i>https://btln.ga/bitlinker</i> の場合，入力するのは <i>bitlinker</i>）</p>
       <p>※削除用キーとは短縮URLの作成時に自動的に発行されたキーのことです．忘れてしまった場合は原則的に削除できません．
-        <br>
-        どうしても削除したいという方は管理人までご連絡下さい．
+      <p>どうしても削除したいという方は管理人までご連絡下さい．</p>
       </p>
     </div>
     <div class="flex_img">

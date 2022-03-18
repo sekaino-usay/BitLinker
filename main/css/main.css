@@ -126,4 +126,14 @@ hr#bigdiv {
   body > div.flex div.flex_img {
     display: none;
   }
+
+  input::placeholder {
+    font: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  html {
+    font-size: 12px;
+  }
 }

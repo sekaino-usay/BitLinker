@@ -37,7 +37,7 @@
           <!-- reCAPTCHA -->
           <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
           <p align="center">
-            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" リセット " class="button">
+            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" クリア " class="button">
           </p>
         </form>
       </div>

@@ -1,13 +1,14 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
+    deny from all
 </Files>
 Options -Indexes
-ErrorDocument 400 https://error.usay05.com/400.php
-ErrorDocument 401 https://error.usay05.com/401.php
-ErrorDocument 403 https://error.usay05.com/403.php
-ErrorDocument 404 https://error.usay05.com/404.php
-ErrorDocument 500 https://error.usay05.com/500.php
-ErrorDocument 503 https://error.usay05.com/503.php
+ErrorDocument 403 https://error.usay05.com/403
+ErrorDocument 404 https://error.usay05.com/404
 order deny,allow
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
 
 php_flag display_errors Off

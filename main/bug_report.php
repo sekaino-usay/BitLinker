@@ -18,9 +18,8 @@
     <div class="flex_txt">
       <h1>バグ・脆弱性報告</h1>
       <br>
-      <p>発見済のバグ・脆弱性一覧は<a href="./bug">こちら</a>です．解決策等教えていただけるとありがたいです．
-        <br>バグ・脆弱性等が無いよう，サービスの開発には万全を期しておりますが，万が一新たなバグ・脆弱性を見つけたら，以下のフォームへ報告して下さい．
-      </p>
+      <p>発見済のバグ・脆弱性一覧は<a href="./bug">こちら</a>です．解決策等教えていただけるとありがたいです．</p>
+      <p>バグ・脆弱性等が無いよう，サービスの開発には万全を期しておりますが，万が一新たなバグ・脆弱性を見つけたら，以下のフォームへ報告して下さい．</p>
       <div id="formWrap">
         <form method="post" action="./bug_report_submitted">
           <table class="formTable">
@@ -39,11 +38,10 @@
           </table>
           <br>
           <p>※スパム防止のため，IPアドレスを記録しております．</p>
-          <br>
           <!-- reCAPTCHA -->
           <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
           <p align="center">
-            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" リセット " class="button">
+            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" クリア " class="button">
           </p>
         </form>
       </div>

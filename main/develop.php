@@ -21,10 +21,9 @@
     <div class="flex_txt">
       <h1>BitLinker Adsense</h1>
       <br>
-      <p>BitLinker AdsenseはBitLinker, 及び U_SAYが運営するサービスの最新情報・広告を配信します．
-        <br>ご自身のWebサイト等に貼っていただけると非常にありがたいです．
-        <br>本広告は非営利目的のバナー広告です．
-      </p>
+      <p>BitLinker AdsenseはBitLinker, 及び U_SAYが運営するサービスの最新情報・広告を配信します．</p>
+      <p>ご自身のWebサイト等に貼っていただけると非常にありがたいです．</p>
+      <p>本広告は非営利目的のバナー広告です．</p>
       <textarea class="form-control row-5" onfocus="this.select();" spellcheck="false">&lt;!-- BitLinker Adsense--&gt;
 &lt;script class="bitlinker_ad" src="https://bitlinker.usay05.com/ad/banner.js"&gt;&lt;/script&gt;</textarea>
       <br>
@@ -39,14 +38,13 @@
     <div class="flex_txt">
       <h1>一緒に開発する</h1>
       <br>
-      <p>BitLinkerを一緒に開発してくれるメンバーを探しています！
-        <br>応募資格は，「HTML・CSS，PHPがある程度分かる人，やる気がある人」です．
-        <br>興味がある方は，以下のURLから，Discordサーバーまでお越しください！<i>F12</i>
+      <p>BitLinkerを一緒に開発してくれるメンバーを探しています！</p>
+      <p>応募資格は，「HTML・CSS，PHPがある程度分かる人，やる気がある人」です．</p>
+      <p>興味がある方は，以下のURLから，Discordサーバーまでお越しください！<i>F12</i></p>
         <script type="text/javascript">
           console.log("一緒にBitLinkerを開発しよう！ → https://discord.gg/ZxWKCYyaPM")
         </script>
         <!-- https://discord.gg/ZxWKCYyaPM -->
-      </p>
     </div>
     <div class="flex_img">
       <img src="./img/join_us.svg">

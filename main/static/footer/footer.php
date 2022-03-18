@@ -58,8 +58,8 @@
             </div>
             <div class="col">
               <ul class="follow-me">
-                <li><a href="https://twitter.com/sekaino_usay" target="_blank" class="sns_link"></a></li>
-                <li><a href="https://github.com/sekaino-usay" target="_blank" class="sns_link"></a></li>
+                <li><a href="https://twitter.com/BitLinker_jp" target="_blank" class="sns_link"></a></li>
+                <li><a href="https://github.com/sekaino-usay/BitLinker" target="_blank" class="sns_link"></a></li>
               </ul>
             </div>
           </div>
@@ -67,6 +67,6 @@
 
       </div>
     </div>
-    <p class="mt-4" id="copyright">© 2021-2022 <a href="https://bitlinker.usay05.com/" target="_blank">BitLinker</a> All Rights Reserved.</p>
+    <p class="mt-4" id="copyright">Copyright© <?php echo date('Y'); ?> <a href="https://bitlinker.usay05.com/" target="_blank">BitLinker</a> All Rights Reserved.</p>
   </div>
 </footer>

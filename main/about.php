@@ -18,11 +18,10 @@
     <div class="flex_txt">
       <h1>サービス内容</h1>
       <br>
-      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができる，純国産のサービスです．
-        <br>短縮URLは，通常の形式（http://~）はもちろん，SSL（https://~）, World Wide Web（http(s)://www.~）に対応しています．
-        <br>全データ日本国内にあるサーバーで厳重に保管されています．
-        <br>Google Safe BrowsingによるURLの安全/危険判定機能も付いているため，安心してお使いいただけます！
-      </p>
+      <p>完全無料＆登録不要で btln.ga/ から始まるカスタム短縮URLを作成することができる，純国産のサービスです．</p>
+      <p>短縮URLは，通常の形式（http://~）はもちろん，SSL（https://~）, World Wide Web（http(s)://www.~）に対応しています．</p>
+      <p>全データ日本国内にあるサーバーで厳重に保管されています．</p>
+      <p>Google Safe BrowsingによるURLの安全/危険判定機能も付いているため，安心してお使いいただけます！</p>
     </div>
     <div class="flex_img">
       <img src="./img/overview.svg">

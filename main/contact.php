@@ -18,9 +18,8 @@
     <div class="flex_txt">
       <h1>お問い合わせ</h1>
       <br>
-      <p>お問い合わせは以下のフォームへお願いします．
-        <br>必要事項を入力後，送信してください．
-      </p>
+      <p>お問い合わせは以下のフォームへお願いします．</p>
+      <p>必要事項を入力後，送信してください．</p>
       <div id="formWrap">
         <form method="post" action="./contact_submitted">
           <table class="formTable">
@@ -43,7 +42,7 @@
           <!-- reCAPTCHA -->
           <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
           <p align="center">
-            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" リセット " class="button">
+            <input type="submit" value="　 送信 　" class="button"> <input type="reset" value=" クリア " class="button">
           </p>
         </form>
       </div>
