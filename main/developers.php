@@ -64,11 +64,71 @@
         <a href="https://github.com/yutakobayashidev" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
         <a href="https://twitter.com/yutakobayashi__" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
       </div>
+      
+      
+
+      
 
       <div class="flex_img">
         <img src="./img/developers.svg">
       </div>
     </div>
+
+
+    <div class="flex_txt row align-items-center follow-me" id="developers">
+    <br>
+
+      <!-- TqIRyu -->
+      <div class="col-md">
+        <img src="./img/developers/TqIRyu.jpg">
+        <h5>TqIRyu</h5>
+        <a href="https://tqiryuofficial.xyz/" target="_blank" rel="noreferrer noopener" title="ホームページ" class="sns_link"><i class="bi bi-globe"></i></a>
+        <a href="https://github.com/TqIRyuOfficial" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/TqIRyu" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="col-md">
+        <img src="./img/developers/ComingSoon.png">
+        <h5>ComingSoon</h5>
+        <a href="" target="_blank" rel="noreferrer noopener" title="ホームページ" class="sns_link"><i class="bi bi-globe"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="col-md">
+        <img src="./img/developers/ComingSoon.png">
+        <h5>ComingSoon</h5>
+        <a href="" target="_blank" rel="noreferrer noopener" title="ホームページ" class="sns_link"><i class="bi bi-globe"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="col-md">
+        <img src="./img/developers/ComingSoon.png">
+        <h5>ComingSoon</h5>
+        <a href="" target="_blank" rel="noreferrer noopener" title="ホームページ" class="sns_link"><i class="bi bi-globe"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="col-md">
+        <img src="./img/developers/ComingSoon.png">
+        <h5>ComingSoon</h5>
+        <a href="" target="_blank" rel="noreferrer noopener" title="ホームページ" class="sns_link"><i class="bi bi-globe"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="GitHub" class="sns_link"><i class="bi bi-github"></i></a>
+        <a href="" target="_blank" rel="noreferrer noopener" title="Twitter" class="sns_link"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <div class="flex_img">
+        <img src="./img/developers2.svg">
+      </div>
+    </div>
+
+
     <div class="flex_img" style="display: none;"></div>
   </div>
 
